@@ -48,10 +48,12 @@ class Dvip_Tool_Dep_Node (rubber.depend.Node):
     def run (self):
         # build command line
         tool = self.tool
+        out = self.source [:-3] + product_extension [tool]
         if tool == 'dvips' and self.doc.engine == 'Omega':
             tool = 'odvips'
         cmd = [ tool ]
         cmd.extend (self.extra_args)
+        cmd.extend (['-o', out])
         cmd.append (self.source)
 
         # run
