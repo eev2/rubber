@@ -221,10 +221,10 @@ Metapost compilation).\
         "rubber.latex_modules",
     ),
     package_dir = {
-        "rubber" : "src",
+        "rubber" : "src"
     },
     package_data = {
-        "rubber" : ("rules.ini", ),
+        "rubber" : ["rules.ini"]
     },
     scripts = (
         "rubber",
