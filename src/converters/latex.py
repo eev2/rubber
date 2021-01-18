@@ -926,7 +926,7 @@ class LaTeXDep (rubber.depend.Node):
                 else:
                     setattr (self, name, val)
         elif name in ('src-specials',):
-            setattr (self, name, val)
+            setattr (self, 'src_specials', val)
         elif name in ('engine', 'file', 'line',):
             msg.warning (_("variable %s is deprecated, please see the manual") % name)
         else:
