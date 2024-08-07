@@ -12,7 +12,7 @@ import rubber.depend
 import gzip
 import re
 
-re_bbox = re.compile("%[%\w]*BoundingBox:")
+re_bbox = re.compile("%[%\\w]*BoundingBox:")
 
 class Dep (rubber.depend.Node):
 

@@ -130,7 +130,7 @@ re_rawbox = re.compile (r'^\\[hv]box\(')
 re_line = re.compile(r"(l\.(?P<line>[0-9]+)( (?P<code>.*))?$|<\*>)")
 re_cseq = re.compile(r".*(?P<seq>(\\|\.\.\.)[^ ]*) ?$")
 re_macro = re.compile(r"^(?P<macro>\\.*) ->")
-re_page = re.compile("\[(?P<num>[0-9]+)\]")
+re_page = re.compile("\\[(?P<num>[0-9]+)\\]")
 re_atline = re.compile(
 "( detected| in paragraph)? at lines? (?P<line>[0-9]*)(--(?P<last>[0-9]*))?")
 re_reference = re.compile("LaTeX Warning: Reference `(?P<ref>.*)' \
